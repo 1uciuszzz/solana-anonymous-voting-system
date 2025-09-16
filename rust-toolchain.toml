@@ -1,0 +1,2 @@
+[toolchain]
+channel = "1.79.0" # 构建时 rust 编译器使用这个版本，支持 Anchor v0.31.1

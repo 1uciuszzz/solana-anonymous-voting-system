@@ -1,0 +1,30 @@
+
+## 初始化
+
+本项目的初始化用如下命令：
+
+```
+anchor init <NAME> --template multiple
+```
+
+## solana 工具链准备
+
+> https://solana.com/zh/docs/intro/installation
+
+## 编译
+
+``` 
+anchor build
+```
+
+## 功能初步构思
+
+每个人可以以创始人的身份创建一个包含了投票主题的活动并且发起一个投票，存储在一个 PollAccount（包含标题、选项、结束时间等）。
+每个用户可以选择一个投票选项（修改 PollAccount 数据）。
+关于匿名性的实现可能需要利用 nonce account 的模式来实现，所以或许需要后端和数据库来存储交易信息。
+
+## 学习目标
+
+1. 安装并且理解 solana toolchain 的安装和使用
+2. 理解基本的 solana anchor program 项目结构
+3. 能用 anchor build 成功编译通过生成产物（target 目录）
